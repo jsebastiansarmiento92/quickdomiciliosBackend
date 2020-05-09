@@ -37,6 +37,7 @@ public class RestRolController {
 	public Optional<Rol> getRol(@PathVariable("id") Integer id){
 		return repoRol.findById(id);
 	}
+	
 	@CrossOrigin
 	@PostMapping
 	public Rol insertar(@RequestBody Rol rol){
